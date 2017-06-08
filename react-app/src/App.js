@@ -11,7 +11,6 @@ class App extends Component {
   fetchPosts(event, lessonId) {
 
     event.preventDefault();
-    console.log(lessonId);
 
     fetch( `http://localhost:3000/posts/${ lessonId }` )
       .then( res => res.json() )
