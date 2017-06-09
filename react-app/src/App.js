@@ -9,10 +9,11 @@ class App extends Component {
     }
 
   fetchPosts(event, lessonId) {
-
     event.preventDefault();
 
-    fetch( `http://localhost:3000/posts/${ lessonId }` )
+    console.log( 'fetching posts' );
+
+    fetch( `http://localhost:3000/api/posts/${ lessonId }` )
       .then( res => res.json() )
       .then( data => {
         this.setState({
