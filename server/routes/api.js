@@ -3,8 +3,6 @@ const db = require('../app');
 
 module.exports = ( router ) => {
 
-  console.log('DB IS!!!!!!!!!!!!:', db)
-
   router.use( cors({
     origin: ['http://localhost:3001'],
     credentials: true
